@@ -3,20 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log In | LinkUp</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body>
-  <div>
-    <h1>LinkUp</h1>
-    <p>Username</p>
-    <p>Password</p>
-    <p>Forgot your password?</p>
-    <btn>Log In</btn>
-    <div>
-      <p>Dont' have an account?</p>
-      <h2>Sign up now</h2>
+<div class="position-absolute top-50 start-50 translate-middle" style="width: 400px;">
+  <h1>LinkUp</h1>
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
     </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Password</label>
+      <input type="password" class="form-control" id="exampleInputPassword1">
+      <p>Forgot your password?</p>
+    </div>
+    <div class="d-grid gap-2 mx-auto">
+    <button type="submit" class="btn btn-primary">Log In</button>
   </div>
+  </form>
+  <div class="text-center">
+    <p>Don't have an account?</p>
+    <h2>Sign up now</h2>
+  </div>
+</div>
 </body>
 </html>
